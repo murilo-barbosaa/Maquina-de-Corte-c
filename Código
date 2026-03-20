@@ -1,0 +1,45 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+
+int opcao;  //variavel de opcao
+
+//variaveis de entrada
+float velocidadedaesteira;
+float tempo;
+float calculo;
+
+//entradas do usuario
+printf("Digite 1 para m/s\n ");
+printf("Digite 2 para m/m\n ");
+printf("Digite 3 para cm/s\n ");
+printf("Digite 4 cm/m\n ");
+scanf("%d", &opcao);
+
+if(opcao==1){
+printf("Selecionado m/seg\n ");
+}
+if(opcao==2){
+printf("Selecionado m/min\n");
+}
+else if(opcao==3){
+printf("Selecionado cm/seg\n");
+}
+if(opcao==4)
+printf("Selecionado cm/min\n");
+
+printf("Digite a velocidade da esteira da opcao que foi selecionada\n");
+scanf("%f",&velocidadedaesteira);
+
+printf("Digite o tempo\n");
+scanf("%f",&tempo);
+
+
+calculo = velocidadedaesteira*tempo;
+
+//resultado
+printf("o comprimento e: %2.f\n",calculo);
+
+
+}
